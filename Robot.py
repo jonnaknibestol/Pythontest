@@ -24,9 +24,11 @@ for product in products:
 	total_price += product.price_with_tax()
 
 if total_price > 500:
- 	0.9 * total_price
+ 	print(0.5 * total_price)
+else: 
+ 	print(total_price)
 
-print(total_price)
+
 
 
 
