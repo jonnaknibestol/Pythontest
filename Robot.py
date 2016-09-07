@@ -1,3 +1,14 @@
+all_customers = [22, 32, 52]
+print (all_customers[0])
+print (all_customers[1])
+print (all_customers[2])
+
+
+
+
+
+
+
 robot_price = 900
 robot_count = 2
 robot_tax = 1.25
