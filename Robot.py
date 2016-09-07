@@ -18,15 +18,15 @@ class Product:
 		self.count = count
 		self.tax = tax 
 
-products = [Product(price=900, count=2, tax=1.25), Product(price=100, count=1, tax=1.06)]
+products = [Product(price=900, count=2, tax=1.25), Product(price=100, count=1, tax=1.06), Product(price=1500, count=1, tax=1.25)]
 total_price = 0
 for product in products:
 	total_price += product.price_with_tax()
 
 if total_price > 500:
- 	print(0.5 * total_price)
-else: 
- 	print(total_price)
+ 	total_price = 0.8 * total_price
+
+print(total_price)
 
 
 
