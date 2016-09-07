@@ -1,4 +1,5 @@
 class Product: 
+	name = ""
 	price = 0
 	count = 0
 	tax = 0
@@ -13,15 +14,21 @@ class Product:
 		else:
 			return total
 
-	def __init__(self, price, count, tax):
+	def __init__(self, name, price, count, tax):
+		self.name = name
 		self.price = price 
 		self.count = count
 		self.tax = tax 
 
-products = [Product(price=900, count=2, tax=1.25), Product(price=100, count=1, tax=1.06), Product(price=1500, count=1, tax=1.25)]
+products = [Product(name="robot", price=900, count=2, tax=1.25), 
+	Product(name="book", price=100, count=1, tax=1.06), 
+	Product(name="battery", price=1500, count=1, tax=1.25)]
 total_price = 0
 for product in products:
 	total_price += product.price_with_tax()
+
+for product in products:
+	print(product.name, product.price_with_tax())
 
 if total_price > 500:
  	total_price = 0.8 * total_price
