@@ -4,6 +4,11 @@ print (all_customers[1])
 print (all_customers[2])
 
 
+customers_by_name = { "bob": "45", "anne": "25"}
+print (customers_by_name["bob"])
+print (customers_by_name["anne"])
+
+
 
 
 
